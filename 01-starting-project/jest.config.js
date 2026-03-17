@@ -9,6 +9,7 @@ module.exports = {
   },
   setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"],
   moduleNameMapper: {
+    "^@/(.*)$": "<rootDir>/src/$1",
     "\\.(css|less|scss|sass)$": "identity-obj-proxy",
     "\\.(png|jpg|jpeg|gif|svg|webp|ico)$": "<rootDir>/src/__mocks__/fileMock.js",
   },

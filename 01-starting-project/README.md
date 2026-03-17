@@ -32,8 +32,19 @@ npm install
 
 ## Project structure
 
-- `src/` – application source (components, styles, tests)
-- `src/**/*.test.tsx` – component/unit tests
+```
+src/
+├── app/              # App shell, root component + tests
+├── components/       # Shared UI (Header, CoreConcept, …)
+├── features/         # Feature modules (e.g. concepts data)
+├── types/            # Shared TypeScript types
+├── assets/           # Static assets (images, etc.)
+├── index.tsx         # Entry point
+└── index.css         # Global styles
+```
+
+Imports use the `@/` alias (e.g. `@/components`, `@/app`).  
+Concept images in `src/features/concepts/data.ts` use placeholder paths; add PNGs to `src/assets/` and switch to `import x from "@/assets/...png"` when you have the files.
 
 ## Quality checks
 

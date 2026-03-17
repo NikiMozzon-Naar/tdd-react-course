@@ -1,0 +1,1 @@
+export { CoreConcept } from "./CoreConcept";
