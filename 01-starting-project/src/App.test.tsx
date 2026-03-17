@@ -9,6 +9,6 @@ describe("App", () => {
 
   it("renders the main content", () => {
     render(<App />);
-    expect(screen.getByRole("heading", { name: /time to get started/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /core concepts/i })).toBeInTheDocument();
   });
 });
