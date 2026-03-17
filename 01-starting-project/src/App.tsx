@@ -1,6 +1,3 @@
-import componentsImage from "./assets/react-core-concepts.png";
-import jsxImage from "./assets/react-jsx.png";
-import propsImage from "./assets/react-props.png";
 import { CoreConceptProps, CORE_CONCEPTS } from "./data";
 
 
